@@ -17,3 +17,39 @@ function soma(a, b) {
     console.log(a + b);
 }
 soma(2);
+
+function soma1(a, b = 2) {
+    console.log(a + b);
+}
+soma1(2);
+
+function soma2(a, b = 2, c = 4) {
+    console.log(a + b + c);
+}
+soma2(2);
+
+// Atribuição via desestruturação
+
+function objeto({nome, sobrenome, idade}){
+    console.log(nome, nome, sobrenome, idade);
+}
+
+let obj = {nome:'Luis Roberto', sobrenome:'Falca', idade: 40}
+objeto(obj)
+
+function array ([nome, sobrenome, idade]) {
+    console.log(nome, sobrenome, idade)
+}
+array(['Carl','Jones', 29])
+
+function conta(operador, acumulador,... numeros){
+    for(let numero of numeros){
+        if (operador === '+') acumulador += numero;
+        if (operador === '-') acumulador -= numero;
+        if (operador === '/') acumulador /= numero;
+        if (operador === '*') acumulador *= numero;
+    }
+    
+    console.log(acumulador)
+};
+conta('*', 1, 20, 30, 40, 50)
