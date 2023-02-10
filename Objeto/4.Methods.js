@@ -29,7 +29,7 @@ const produto = { nome: 'Produto', preco: 1.3 };
 // });
 // console.log(Object.getOwnPropertyDescriptor(produto, 'nome'));
 // console.log(Object.values(produto)); //Retorna um array com os valores do objeto sem as chaves
-// console.log(Object.entries(produto)); // Retorna um array de arrays com chave e valor
+// console.log(Object.entries(produto)); // Retorna um array de arrays correspondente a quantidade de chave e valor
 
 for(let valor of Object.entries(produto)) {
     console.log(valor[0], valor[1]);
