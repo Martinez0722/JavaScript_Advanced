@@ -13,6 +13,7 @@
 
 // const produto = { nome: 'Produto', preco: 1.8 };
 // // Object.assign
+// Object.assign(des, any)
 // const caneca = Object.assign({}, produto, { material: 'porcelana' });
 
 // caneca.nome = 'Outro nome';
